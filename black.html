@@ -1,0 +1,116 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>系统管理子系统</title>
+  <link type="image/x-icon" rel="shortcut icon" href="../favicon.ico">
+  <link type="text/css" rel="stylesheet" href="/fastfood/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/fastfood/css/bootstrap.min.css">
+  <script type="text/javascript" src="/fastfood/Tpl/Admin/js/main233.js"> </script>
+</head>
+
+<body onload="showBlack()">
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">管理面板</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人信息维护<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/fastfood/index.php/Admin/changepassword">修改密码</a></li>
+                  <li><a href="/fastfood/index.php/Admin/editinfo">个人信息修改</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">信息管理<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/fastfood/index.php/Admin/manager">系统管理员</a></li>
+                  <li><a href="/fastfood/index.php/Admin/yudingmanager">网上预订管理员</a></li>
+                  <li><a href="/fastfood/index.php/Admin/user">用户</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">权限管理<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/fastfood/index.php/Admin/white">白名单</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/fastfood/index.php/Admin/black">黑名单</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" >注销<b ></b></a>
+          </li>
+
+      </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="col-md-8 col-md-offset-2">
+    <h2 class="page-header">黑名单帐号</h2>
+    <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#mOrderModal">添加帐号</button>
+    <table id="tblBlack" class="table table-hover">
+      <thead>
+        <tr><th>用户账号</th><th>用户真实姓名</th><th>权限等级</th><th>操作</th></tr>
+      </thead>
+      <tbody id="blackList">
+      </tbody>
+      <tfoot>
+        <tr id="addActivityBar">
+        </tr>
+      </tfoot>
+    </table>
+</div> <!-- /container -->
+<div class="modal fade" id="mOrderModal" tabindex="-1" role="dialog" aria-labelledby="catModalLabel" aria-hidden="true">
+<!--   <form action="/fastfood/index.php/User/addUser"> -->
+  <form>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="catModalLabel">添加帐号</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" placeholder="用户账号" name="account" id="accountID">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="submit" class="btn btn-primary" data-dismiss="modal" onClick="addBlack()">添加</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </form>
+</div><!-- /.modal -->
+<div class="modal fade" id="confirmDeleteBlack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">删除黑名单</h4>
+      </div>
+      <div class="modal-body">
+        确认删除？
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="deleteWhite" onClick="deleteBlack()">确认</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/fastfood/js/jquery-1.10.2.min.js"></script>
+<script src="/fastfood/js/bootstrap.min.js"></script>
+
+</body>
+</html>

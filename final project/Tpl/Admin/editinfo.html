@@ -1,0 +1,107 @@
+<!doctype HTML>
+<head>
+  <meta charset="UTF-8">
+  <title>系统管理子系统</title>
+  <link type="image/x-icon" rel="shortcut icon" href="../favicon.ico">
+  <link type="text/css" rel="stylesheet" href="/fastfood/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/fastfood/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">管理面板</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人信息维护<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/fastfood/index.php/Admin/changepassword">修改密码</a></li>
+                  <li><a href="/fastfood/index.php/Admin/editinfo">个人信息修改</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">信息管理<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/fastfood/index.php/Admin/manager">系统管理员</a></li>
+                  <li><a href="/fastfood/index.php/Admin/yudingmanager">网上预订管理员</a></li>
+                  <li><a href="/fastfood/index.php/Admin/user">用户</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">权限管理<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/fastfood/index.php/Admin/white">白名单</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/fastfood/index.php/Admin/black">黑名单</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" >注销<b ></b></a>
+          </li>
+      </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="dingdan">
+    <h2 class="page-header">个人信息修改</h2>
+    <div>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="managerID">管理员ID</label>
+                            <input type="text" class="form-control" id="managerID" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="manager_name">姓名</label>
+                            <input type="text" class="form-control" id="manager_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="true_name">真实姓名</label>
+                            <input type="text" class="form-control" id="true_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="text" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">联系地址</label>
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone_number">电话号码</label>
+                            <input type="text" class="form-control" id="phone_number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="manager_type">管理员类别</label>
+                            <input type="text" class="form-control" id="manager_type" required>
+                        </div>
+                        <div class="form-group text-center">
+                             <button type="submit" class="center-block btn btn-danger" onclick="SaveInfo(); return false;">
+                                保存
+                            </button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<script src="/fastfood/js/jquery-1.10.2.min.js"></script>
+<script src="/fastfood/js/bootstrap.min.js"></script>
+<script src="/fastfood/Tpl/Admin/js/main233.js"></script>
+</body>

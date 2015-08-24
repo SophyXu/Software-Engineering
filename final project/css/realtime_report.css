@@ -1,0 +1,18 @@
+#realtime_table{
+    width:70%;
+    margin-left:15%;
+    font-size:22px;
+}
+
+#realtime_table th{
+    text-align:center;
+}
+
+#realtime_table td{
+    text-align:center;
+}
+
+p.title{
+    font-size: 30px;
+    text-align:center;
+}

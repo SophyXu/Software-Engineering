@@ -1,0 +1,136 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>系统管理子系统</title>
+  <link type="image/x-icon" rel="shortcut icon" href="../favicon.ico">
+  <link type="text/css" rel="stylesheet" href="/fastfood/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/fastfood/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index2.html">管理面板</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人信息维护<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/fastfood/index.php/Admin/changepassword2">修改密码</a></li>
+                  <li><a href="/fastfood/index.php/Admin/editinfo2">个人信息修改</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="/fastfood/index.php/Admin/ordermanagehotel" >订单信息管理</a>
+          </li>
+          <li>
+              <a href="#" >注销<b ></b></a>
+          </li>
+
+      </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="dingdan">
+      <h2 class="page-header">订单信息管理</h2>
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="ordermanagehotel.html">酒店订单</a></li>
+        <li role="presentation" class="active"><a href="ordermanageflight">航班订单</a></li>
+      </ul>
+      <table class="table table-striped">
+        <thead>
+          <tr><th>订单号</th><th>航班号</th><th>航空公司</th><th>机型</th><th>起飞时间</th><th>降落时间</th><th>始发地</th><th>目的地</th><th>价格</th><th>操作</th></tr>
+        </thead>
+        <tbody id="flightList">
+            <tr id="item1">
+            <th scope="row" id= "divID">T123904</th>
+            <td>KN5911</td>
+            <td>联合航空</td>
+            <td>波音737(中)</td>
+            <td>13:00</td>
+            <td>17:00</td>
+            <td>北京</td>
+            <td>深圳</td>
+            <td>833</td>
+            <td><button type="button" class="btn btn-danger btn-xs" onClick="confirmDeleteFlightFunction('item1')">删除订单</button></td>
+          </tr>
+          <tr id="item2">
+            <th scope="row">T930284</th>
+            <td>CA4612</td>
+            <td>中国国航</td>
+            <td>波音737(中)</td>
+            <td>11:45</td>
+            <td>18:00</td>
+            <td>乌鲁木齐</td>
+            <td>青岛</td>
+            <td>1320</td>
+            <td><button type="button" class="btn btn-danger btn-xs" onClick="confirmDeleteFlightFunction('item2')">删除订单</button></td>          
+          </tr>
+          <tr id="item3">
+            <th scope="row">T505843</th>
+            <td>HU7047</td>
+            <td>海南航空</td>
+            <td>波音737(中)</td>
+            <td>07:10</td>
+            <td>08:50</td>
+            <td>海口</td>
+            <td>厦门</td>
+            <td>495</td>
+            <td><button type="button" class="btn btn-danger btn-xs" onClick="confirmDeleteFlightFunction('item3')">删除订单</button></td>  
+          </tr>
+        </tbody>
+      </table>
+      <nav>
+        <ul class="pagination">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+</div> <!-- /container -->
+<!-- Modal -->
+<div class="modal fade" id="confirmDeleteFlight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
+  <div class="modal-dialog">  
+    <div class="modal-content">  
+      <div class="modal-header">  
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>  
+        <h4 class="modal-title">删除航班订单</h4>  
+      </div>  
+      <div class="modal-body">  
+        <p>确认删除?</p>  
+      </div>  
+      <div class="modal-footer">  
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>  
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onClick="deleteFlight()">确认</button>  
+      </div>  
+    </div><!-- /.modal-content -->  
+  </div><!-- /.modal-dialog -->  
+</div><!-- /.modal --> 
+
+<script src="/fastfood/js/jquery-1.10.2.min.js"></script>
+<script src="/fastfood/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/fastfood/Tpl/Admin/js/main233.js"> </script>
+
+</body>
+</html>

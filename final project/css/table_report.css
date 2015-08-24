@@ -1,0 +1,68 @@
+table,
+tr,
+td,
+thead,
+th {
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+th,
+td {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+p.title {
+  font-family: "微软雅黑";
+  font-size: 24px;
+  text-align: center;
+}
+table.report {
+  text-align: center;
+  vertical-align: center;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.report table.price-info {
+  border: 2px solid white;
+}
+table.report th {
+  font-weight: normal;
+}
+table.report thead.area th {
+  width: 10%;
+}
+table.report tbody.info table.price-info {
+  width: 100%;
+}
+table.report tbody.info thead {
+  width: 80%;
+}
+table.report tbody.info th,
+table.report tbody.info td {
+  width: 10%;
+}
+
+p.auser{
+    text-align:center;
+}
+
+table.list_report{
+    position: relative;
+    float:left;
+    width: 600px;
+    margin-left: 5px;
+    margin-top:15px;
+}
+
+div.checkbox-inline{
+    display:inline-block;
+    margin-left:100px;
+}
+

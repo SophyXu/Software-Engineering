@@ -1,0 +1,397 @@
+body{
+	background: #fff;
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp";
+}
+p,a,h4{
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp";
+}
+a{
+	color: #C30D23;
+	cursor: pointer;
+}
+a:hover{
+	color: red;
+}
+ul { list-style-type:none; margin:0 0 1em 0; display:inline; padding:0; line-height:0%; }
+ul li { margin:0; display:inline; padding:0; line-height:normal; zoom:1; }
+.pull-right{
+	float: right;
+	display:inline;
+}
+.half-width{
+	width: 50%;
+}
+.hide{
+	display: none;
+}
+.main-btn{
+	background: #EB4F37;
+	color: #fff;
+}
+.main-btn:hover{
+	background: #C30D23;
+	color: #fff;
+}
+.min-input{
+	width: 30px;
+}
+.loading{
+	display: none;
+	float: left;
+	padding-left: 20px;
+}
+.loading img{
+	width: 30px;
+}
+.text-center{
+	text-align: center;
+}
+.full-width{
+	width: 100%;
+}
+.main-color{
+	color: #C30D23;
+}
+.main-color-bg{
+	color: #fff;
+	background: #C30D23;
+}
+.main-color-border{
+	border: 2px solid #C30D23;
+	border-radius: 5px;
+	border-width: 4px 2px 4px 2px;
+}
+.main-color-line{
+	float: left;
+	display: inline !important;
+	display: none;
+	width: 100%;
+	height: 4px;
+	line-height: 0;
+	margin: 10px 0 10px 0;
+	background: #C30D23;
+    margin-top: 75px;
+}
+.main-container{
+	/*margin: 0 auto;*/
+	position: absolute;
+	left: 10%;
+	top: 0;
+	width: 80%;
+	width: 1000px;
+	height: 750px;
+}
+.nav-banner{
+	float: left;
+	width: 100%;
+	height: 70px;
+}
+.logo{
+	width: 100%;
+	height: 100px;
+	background: #C30D23;
+	margin-right: 20px;
+	color: #fff;
+	text-shadow: 5px 5px 10px #000;
+}
+
+.logo h3{
+    display:inline;
+    position:relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nav-top{
+	float: left;
+	display: inline;
+	width: 750px;
+	height: 50px;
+}
+.nav-list{
+    float: left;
+    display: inline;
+    margin-left: 190px;
+	width: 600px;
+	height: 20px;
+	line-height: 20px;
+    margin-top: 12px;
+}
+.nav-list li{
+	float: left;
+	margin: 0 40px;
+	display: inline;
+}
+s
+.nav-list li a {
+    padding-bottom : 5px;
+}
+
+.nav-list a.active {
+    border-bottom: 4px solid #C30D23;
+    background: #fff;
+}
+
+.nav-list a{
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 10px;
+}
+/*
+.nav-list a:hover{
+	background: #C30D23;
+	border-radius: 5px;
+	color: #fff;
+}*/
+.left-col{
+	position: absolute;
+	float: left;
+	left: 0;
+	top: 160px;
+	width: 770px;
+}
+.content{
+	position: absolute;
+	left: 180px;
+	top: 0;
+	width: 570px;
+	height: 512px;
+	padding: 0 5px;
+	overflow: auto;
+}
+.banner {
+	position: absolute;
+	left: 20px;
+	width: 560px;
+	height: 510px;
+}
+.tab{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 180px;
+	height: 500px;
+	padding: 2px;
+	overflow: hidden;
+}
+.tab-header{
+	float: left;
+	display: inline;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 17px;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-shadow: 2px 0 2px #777;
+}
+.tab a{
+	float: left;
+	display: inline;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #B35D27;
+	border-bottom: 1px solid #ddd;
+}
+.sub-tab{
+	/*float: left;*/
+	display: block;
+	padding-left: 20px;
+}
+.page{
+	font-family: "NSimSun", "SimSun", "STSong", "AR PL SungtiL GB", "TW\-Sung", "WenQuanYi Bitmap Song";
+	display: none;
+}
+.lunch-item{
+	position: relative;
+	display: inline;
+	float: left;
+	left: 0;
+	margin: 0px 0px 28px 10px;
+	padding: 5px;
+	width: 162px;
+	height: 230px;
+	color: #000;
+	font-size: 10px;
+	background-color: #F7F6F6;
+	border: 1px solid #777;
+	overflow: hidden;
+	cursor: pointer;
+}
+.lunch-img{
+	float: left;
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	overflow: hidden;
+}
+.lunch-img img{
+	width: 100%;
+	height: 100%;
+}
+.lunch-info{
+	float: left;
+	width: 100%;
+	word-break: break-all;
+}
+.select input{
+	width: 30px;
+}
+.select button{
+	position: relative;
+	top: -5px;
+}
+.my_order{
+	/*width: 720px;*/
+	height: 400px;
+}
+.leftDiv{
+	float: left;
+	width: 100%;
+	height: 400px;
+	overflow: auto;
+}
+#foodImg{
+	width: 180px;
+	height: 120px;
+	cursor: pointer;
+}
+#foodImg:hover{
+	position: relative;
+	left: 0px;
+	top: -20px;
+	width: 340px;
+	height: 230px;
+}
+.right-col{
+	position: absolute;
+	top: 160px;
+	right: 0;
+	float: right;
+	display: inline;
+	width: 221px;
+	border-radius: 5px;
+	background-color: #C30D23;
+	background-image: url('../img/right_top.jpg');
+	background-repeat:no-repeat;
+}
+.right-col-bottom{
+	position: absolute;
+	right: 0;
+	top: 502px !important;
+	top: 510px;
+	color: #9E9E9E;
+	width: 207px;
+	border: 2px solid #B3B3B3;
+	padding: 5px;
+	border-radius: 5px;
+	height: 149px;
+	margin-top: 7px;
+	line-height: 17px;
+}
+.login{
+	float: left;
+	display: inline;
+	width: 197px;
+	min-height: 250px;
+	padding: 10px 10px;
+	border: 2px solid #C30D23;
+	border-top: 0;
+	border-radius: 5px;
+	height: 200px;
+	background: #fff;
+}
+.login input{
+	height: 30px;
+	width: 190px;
+}
+.login-header{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 35px;
+	height: 38px;
+	color: #fff;
+	padding-left: 10px;
+}
+.login-btn{
+	position: relative;
+	display: inline;
+	top: -40px;
+	margin-right: 5px;
+	background: #CB0C1B;
+	color: #fff;
+}
+.login-btn:hover{
+	background: #B90B15;
+	color: #fff;
+}
+#userDiv{
+	display: none;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #F9F5EC;
+	color: #CD9C7B;
+	text-align: center;
+	border-top: 2px solid #ddd;
+}
+
+div#notice div.info{
+    width:80%;
+    height: 500px;
+}
+
+div.helptitle{
+    font-weight: bold;
+    background-color: #ffe7c1;
+    border-radius: 10px;
+    color: #ec000c;
+    font-size: 14px;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a.enteradmin{
+    position:relative;
+    display: none;
+    float:right;
+    margin-top: 5px;
+    margin-right:20px;
+}
+
+img.bg_list_img{
+    bottom:0;
+    width:90%;
+    display:block;
+    margin-top: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.banner_wan{
+    display:inline-block;
+    height: 80%;
+    margin-left: 20px;
+    margin-top:5px;
+}
+
+.login-btn{
+	display: inline;
+    margin-top: 30px;
+}
+
+div.ctitle{
+    display:inline;
+    margin-left:160px;
+}

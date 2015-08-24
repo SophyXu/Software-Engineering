@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC"-//W3C//DTDHTML4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="shortcut icon" href="/fastfood/favicon.ico">
+    <link rel="icon" href="/fastfood/favicon.ico">
+    <!-- Bootstrap css file v2.2.1 -->
+    <link rel="stylesheet" type="text/css" href="/fastfood/bootstrap/css/bootstrap.min.css">
+
+    <!--[if lte IE 6]>
+        <!-- bsie css 补丁文件 -->
+        <link rel="stylesheet" type="text/css" href="/fastfood/bootstrap/css/bootstrap-ie6.min.css">
+
+        <!-- bsie 额外的 css 补丁文件 -->
+        <link rel="stylesheet" type="text/css" href="/fastfood/bootstrap/css/ie.css">
+        <![endif]-->
+           <link rel="stylesheet" href="/fastfood/css/font-awesome.min.css">
+           <link rel="stylesheet" href="/fastfood/css/buttons.css">
+           <link type="text/css" href="/fastfood/css/jquery.simple-dtpicker.css" rel="stylesheet" />
+           <link rel="stylesheet" type="text/css" href="/fastfood/css/kfc-style.css">
+           <title>在线预订-系统管理子系统</title>
+  </head>
+
+
+  <body>
+    <div id="container" class="main-container">
+        <div class="header">
+            <div class="nav-banner">
+                <div class="logo">
+                    <img src="/fastfood/img/flight.png" class="banner_wan" alt=""/>
+                    <div class="ctitle">
+                      <h3>浙江大学 软件工程</h3><h3 style="color:#FFF000;">系统管理子系统</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-color-line"></div>
+
+        <div id="content" class="content">
+            <br/><br/><br/><br/><br/>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="text-center">管理员登陆</h3>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="panel-body">
+                            <form id="AdminLogin" role="form" method="post" action="#" >
+                                <div class="form-group text-center">
+                                    <label for="userId">username:
+                                    <input class="form-control" type="text" id="userId" ></label>
+                                </div>
+                                <div class="form-group text-center">
+                                    <label for="password">password:
+                                    <input class="form-control" type="password" id="password"></label>
+                                </div>
+                                <div class="form-group text-center">
+                                    <label for="typeID">type:
+                                        <input class="form-control" type="radio" name="type" id="typeID">系统管理员
+                                        <input class="form-control" type="radio" name="type" id="typeID">网上预订管理员
+                                    </label>
+                                </div>
+                                <div class="form-group text-center">
+                                    <label for="loginVerify">验证码：
+                                    <img src="/fastfood/index.php/Index/verify" id="verify" />
+                                    <input class="form-control" type="text" id="loginVerify" style="width:60px;display:inline;margin-bottom:0;margin-left:10px;height:20px;">
+                                    </label>
+                                </div>
+                                <br/>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn login-btn" onclick="AdminLogin(); return false;">
+                                        帐号登录
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Copyright &copy; 2015 浙江大学软件工程第六小组. All rights reserved.
+        </div>
+    </div><!--container-->
+
+    <!-- jQuery 1.7.2 or higher -->
+    <script type="text/javascript" src="/fastfood/js/jquery-1.7.2.min.js"></script>
+    <!-- Optional, bootstrap javascript library -->
+    <script type="text/javascript" src="/fastfood/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--[if lte IE 6]>
+        <!-- bsie js 补丁只在IE6中才执行 -->
+        <script type="text/javascript" src="/fastfood/js/bootstrap-ie.js"></script>
+        <![endif]-->
+   <script src="/fastfood/js/json3.min.js"></script>
+
+   <script type="text/javascript" src="/fastfood/Tpl/Admin/js/main233.js"> </script>
+   
+</body>
+</html>

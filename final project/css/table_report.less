@@ -1,0 +1,58 @@
+@font : "微软雅黑";
+
+table,tr,td,thead,th{
+    border-collapse:collapse;
+    border:1px solid black;
+    font-family: @font;
+    font-size: 14px;
+}
+
+th,td{
+    padding-top:3px;
+    padding-bottom : 3px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+p.title{
+    font-family: @font;
+    font-size: 17px;
+    text-align: center;
+}
+
+table.report{
+    text-align:center;
+    vertical-align:center;
+    width:97%;
+    margin-left:auto;
+    margin-right:auto;
+
+    table.price-info{
+        border:2px solid white;
+    }
+
+    th{
+        font-weight:normal;
+    }
+    thead.area{
+        th{
+            width: 10%;
+        }
+    }
+
+    tbody.info{
+        table.price-info{
+            width:100%;
+        }
+
+        thead{
+            width:80%;
+        }
+        th,td{
+            width:10%;
+        }
+    }
+}
